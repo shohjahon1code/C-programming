@@ -3,17 +3,20 @@
 
 int main()
 {
-  // 45987
-  int son, onMinglik, minglik, yuzlik, onlik, birlik;
-  printf("Beshxonali son kiriting! ");
-  scanf("%d", &son);
-
-  onMinglik = son / 10000;
-  minglik = (son % 10000) / 1000;
-  yuzlik = (son % 1000) / 100;
-  onlik = (son % 100) / 10;
-  birlik = (son % 10) / 1;
-
-  printf("%d\t%d\t%d\t%d\t%d\t", onMinglik, minglik, yuzlik, onlik, birlik);
+  int num;
+  printf("Iltimos son kiriting! :");
+  scanf("%d", &num);
+  if (num > 0)
+  {
+    printf("Kiritgan soningiz Musbat: %d", num);
+  }
+  else if (num == 0)
+  {
+    printf("Son na manfiy na musbat");
+  }
+  else
+  {
+    printf("Kiritgan soningiz manfiy ekan: %d", num);
+  }
   return 0;
 }
